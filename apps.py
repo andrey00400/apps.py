@@ -6,7 +6,8 @@ app = Flask(__name__)
 CORS(app)  # Додаємо підтримку CORS
 api = Api(app)
 
-items = {}  # Словник для зберігання елементів
+# Словник для зберігання елементів
+items = {} 
 
 class Item(Resource):
     def get(self, name):
